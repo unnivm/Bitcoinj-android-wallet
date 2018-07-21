@@ -40,9 +40,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
     // https://mvnrepository.com/artifact/com.google.common/google-collect
-    compile 'com.google.guava:guava:latest.integration'
+    implementation 'com.google.guava:guava:latest.integration'
 
-    compile project(':core')
+    implementation 'org.slf4j:slf4j-api:1.7.12'
+    implementation 'org.slf4j:slf4j-simple:1.7.12'
+    implementation project(':core')
 }
 
 
